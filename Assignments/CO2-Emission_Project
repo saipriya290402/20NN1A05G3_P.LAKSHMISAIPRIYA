@@ -1,1 +1,5 @@
-
+we need to downlad Tableau.
+After the download of Tablueau You need to have Tableau access.
+Make sure to maintain the Dataset for this Project.
+Conect the datadet in tableau as follow->Open tablueau in the left corner you can visible the textfile ,click on it and upload the co2new.csv there.
+Then start your visualizations creations using provided Pictures.
