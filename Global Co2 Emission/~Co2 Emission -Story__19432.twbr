@@ -1,0 +1,3725 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Co2 New' inline='true' name='federated.11z382s10i2o1919gzi5s03z3l8a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Co2 New' name='textscan.021ur3v1sqmes812suma60qgnkbb'>
+            <connection class='textscan' directory='C:/Users/saipriya/Downloads' filename='Co2 New.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.021ur3v1sqmes812suma60qgnkbb' name='Co2 New.csv' table='[Co2 New#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='real' name='co2' ordinal='2' />
+            <column datatype='real' name='co2_growth_prct' ordinal='3' />
+            <column datatype='real' name='co2_per_capita' ordinal='4' />
+            <column datatype='real' name='cumulative_co2' ordinal='5' />
+            <column datatype='real' name='coal_co2' ordinal='6' />
+            <column datatype='real' name='cement_co2' ordinal='7' />
+            <column datatype='real' name='flaring_co2' ordinal='8' />
+            <column datatype='real' name='gas_co2' ordinal='9' />
+            <column datatype='real' name='oil_co2' ordinal='10' />
+            <column datatype='real' name='other_industry_co2' ordinal='11' />
+            <column datatype='real' name='cement_co2_per_capita' ordinal='12' />
+            <column datatype='real' name='coal_co2_per_capita' ordinal='13' />
+            <column datatype='real' name='flaring_co2_per_capita' ordinal='14' />
+            <column datatype='real' name='gas_co2_per_capita' ordinal='15' />
+            <column datatype='real' name='oil_co2_per_capita' ordinal='16' />
+            <column datatype='real' name='other_co2_per_capita' ordinal='17' />
+            <column datatype='real' name='trade_co2_share' ordinal='18' />
+            <column datatype='integer' name='population' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.021ur3v1sqmes812suma60qgnkbb' name='Co2 New.csv' table='[Co2 New#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='real' name='co2' ordinal='2' />
+            <column datatype='real' name='co2_growth_prct' ordinal='3' />
+            <column datatype='real' name='co2_per_capita' ordinal='4' />
+            <column datatype='real' name='cumulative_co2' ordinal='5' />
+            <column datatype='real' name='coal_co2' ordinal='6' />
+            <column datatype='real' name='cement_co2' ordinal='7' />
+            <column datatype='real' name='flaring_co2' ordinal='8' />
+            <column datatype='real' name='gas_co2' ordinal='9' />
+            <column datatype='real' name='oil_co2' ordinal='10' />
+            <column datatype='real' name='other_industry_co2' ordinal='11' />
+            <column datatype='real' name='cement_co2_per_capita' ordinal='12' />
+            <column datatype='real' name='coal_co2_per_capita' ordinal='13' />
+            <column datatype='real' name='flaring_co2_per_capita' ordinal='14' />
+            <column datatype='real' name='gas_co2_per_capita' ordinal='15' />
+            <column datatype='real' name='oil_co2_per_capita' ordinal='16' />
+            <column datatype='real' name='other_co2_per_capita' ordinal='17' />
+            <column datatype='real' name='trade_co2_share' ordinal='18' />
+            <column datatype='integer' name='population' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>co2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_growth_prct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_growth_prct]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>co2_growth_prct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>co2_per_capita</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>cumulative_co2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>coal_co2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>cement_co2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flaring_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flaring_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>flaring_co2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>gas_co2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>oil_co2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_industry_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[other_industry_co2]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>other_industry_co2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>cement_co2_per_capita</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>coal_co2_per_capita</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flaring_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flaring_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>flaring_co2_per_capita</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>gas_co2_per_capita</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>oil_co2_per_capita</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[other_co2_per_capita]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>other_co2_per_capita</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_co2_share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trade_co2_share]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>trade_co2_share</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[Co2 New.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Co2 New.csv' datatype='table' name='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' role='measure' type='quantitative' />
+      <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+      <column caption='Cement Co2 Per Capita' datatype='real' name='[cement_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+      <column caption='Co2 Growth Prct' datatype='real' name='[co2_growth_prct]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+      <column caption='Coal Co2 Per Capita' datatype='real' name='[coal_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Cumulative Co2' datatype='real' name='[cumulative_co2]' role='measure' type='quantitative' />
+      <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+      <column caption='Flaring Co2 Per Capita' datatype='real' name='[flaring_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+      <column caption='Gas Co2 Per Capita' datatype='real' name='[gas_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+      <column caption='Oil Co2 Per Capita' datatype='real' name='[oil_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Other Co2 Per Capita' datatype='real' name='[other_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Other Industry Co2' datatype='real' name='[other_industry_co2]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Trade Co2 Share' datatype='real' name='[trade_co2_share]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cement_co2_per_capita]' derivation='Sum' name='[sum:cement_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[co2_growth_prct]' derivation='Sum' name='[sum:co2_growth_prct:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[co2_per_capita]' derivation='Sum' name='[sum:co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[coal_co2_per_capita]' derivation='Sum' name='[sum:coal_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cumulative_co2]' derivation='Sum' name='[sum:cumulative_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[flaring_co2_per_capita]' derivation='Sum' name='[sum:flaring_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gas_co2_per_capita]' derivation='Sum' name='[sum:gas_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[oil_co2_per_capita]' derivation='Sum' name='[sum:oil_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[other_co2_per_capita]' derivation='Sum' name='[sum:other_co2_per_capita:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[other_industry_co2]' derivation='Sum' name='[sum:other_industry_co2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[trade_co2_share]' derivation='Sum' name='[sum:trade_co2_share:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_growth_prct:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:population:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:trade_co2_share:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2_per_capita:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2_per_capita:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bonaire Sint Eustatius and Saba&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Congo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tuvalu&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cape Verde&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;French Guiana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mayotte&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Niue&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Timor&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;World&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;British Virgin Islands&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Nauru&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Panama Canal Zone&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cook Islands&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Macao&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Palau&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Saint Pierre and Miquelon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bermuda&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Christmas Island&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ryukyu Islands&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;South America&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;French Polynesia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Reunion&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Marshall Islands&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Vanuatu&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anguilla&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Saint Helena&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Asia (excl. China &amp; India)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Brunei&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Europe (excl. EU-27)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;International transport&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Curacao&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Europe (excl. EU-28)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kiribati&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Democratic Republic of Congo&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kuwaiti Oil Fires&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Martinique&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;French Equatorial Africa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sint Maarten (Dutch part)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Wallis and Futuna&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;EU-27&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Palestine&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saint Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;St. Kitts-Nevis-Anguilla&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Antarctica&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Montserrat&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Turks and Caicos Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;French West Africa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Leeward Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Micronesia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;North America (excl. USA)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Solomon Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tonga&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Faeroe Islands&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Syria&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Aruba&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cote d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;EU-28&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guadeloupe&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Samoa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Micronesia (country)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;North Korea&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Co2 New.csv' id='Co2 New.csv_5D1E44067F1B433EB4584005056BECF9'>
+            <properties context=''>
+              <relation connection='textscan.021ur3v1sqmes812suma60qgnkbb' name='Co2 New.csv' table='[Co2 New#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='real' name='co2' ordinal='2' />
+                  <column datatype='real' name='co2_growth_prct' ordinal='3' />
+                  <column datatype='real' name='co2_per_capita' ordinal='4' />
+                  <column datatype='real' name='cumulative_co2' ordinal='5' />
+                  <column datatype='real' name='coal_co2' ordinal='6' />
+                  <column datatype='real' name='cement_co2' ordinal='7' />
+                  <column datatype='real' name='flaring_co2' ordinal='8' />
+                  <column datatype='real' name='gas_co2' ordinal='9' />
+                  <column datatype='real' name='oil_co2' ordinal='10' />
+                  <column datatype='real' name='other_industry_co2' ordinal='11' />
+                  <column datatype='real' name='cement_co2_per_capita' ordinal='12' />
+                  <column datatype='real' name='coal_co2_per_capita' ordinal='13' />
+                  <column datatype='real' name='flaring_co2_per_capita' ordinal='14' />
+                  <column datatype='real' name='gas_co2_per_capita' ordinal='15' />
+                  <column datatype='real' name='oil_co2_per_capita' ordinal='16' />
+                  <column datatype='real' name='other_co2_per_capita' ordinal='17' />
+                  <column datatype='real' name='trade_co2_share' ordinal='18' />
+                  <column datatype='integer' name='population' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='China vs India Internal Factors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+            <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+            <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+            <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#e15759' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.5524861812591553' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]</rows>
+        <cols>([federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk] / [federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{41B770FB-AECA-46BF-AB2B-FB0ACD1D0B3C}' />
+    </worksheet>
+    <worksheet name='Co2 Emission India vs United States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</rows>
+        <cols>([federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk] * [federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk])</cols>
+      </table>
+      <simple-id uuid='{685A9A28-4972-4016-9DE0-FFF7854EEDC5}' />
+    </worksheet>
+    <worksheet name='Co2 Emission in 2020'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Asia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Europe&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' included-values='in-range'>
+            <min>1975</min>
+            <max>2020</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#75a1c7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</cols>
+      </table>
+      <simple-id uuid='{B82F6B7D-42D9-44E8-B8A9-51A8E5498DEC}' />
+    </worksheet>
+    <worksheet name='Co2 Emmission from 1974 to 2020'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+            <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+            <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+            <column caption='Other Industry Co2' datatype='real' name='[other_industry_co2]' role='measure' type='quantitative' />
+            <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_industry_co2]' derivation='Sum' name='[sum:other_industry_co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' included-values='in-range'>
+            <min>1975</min>
+            <max>2020</max>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' num-steps='12' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' />
+              <lod column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{9F10B1C7-96C2-4046-AE86-A69C54CAD552}' />
+    </worksheet>
+    <worksheet name='Co2 emission per capita'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2_per_capita]' derivation='Sum' name='[sum:co2_per_capita:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bahrain&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Bonaire Sint Eustatius and Saba&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brunei&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Curacao&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Qatar&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Sint Maarten (Dutch part)&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Trinidad and Tobago&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Qatar&quot;</bucket>
+              <bucket>&quot;Curacao&quot;</bucket>
+              <bucket>&quot;Sint Maarten (Dutch part)&quot;</bucket>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+              <bucket>&quot;Bahrain&quot;</bucket>
+              <bucket>&quot;Kuwait&quot;</bucket>
+              <bucket>&quot;Bonaire Sint Eustatius and Saba&quot;</bucket>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+              <bucket>&quot;Brunei&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' value='70' />
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]' value='56' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{E2774B21-5BC4-4C58-98B4-992BF335E81F}' />
+    </worksheet>
+    <worksheet name='Continent wise contribution in internal Factors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <_.fcp.ObjectModelTableType.true...column caption='Co2 New.csv' datatype='table' name='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]' pivot='key' type='quantitative' />
+            <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+            <column caption='Cement Co2 Per Capita' datatype='real' name='[cement_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Co2 Growth Prct' datatype='real' name='[co2_growth_prct]' role='measure' type='quantitative' />
+            <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+            <column caption='Coal Co2 Per Capita' datatype='real' name='[coal_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Cumulative Co2' datatype='real' name='[cumulative_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2 Per Capita' datatype='real' name='[flaring_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+            <column caption='Gas Co2 Per Capita' datatype='real' name='[gas_co2_per_capita]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+            <column caption='Oil Co2 Per Capita' datatype='real' name='[oil_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Other Co2 Per Capita' datatype='real' name='[other_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Other Industry Co2' datatype='real' name='[other_industry_co2]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+            <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cement_co2_per_capita]' derivation='Sum' name='[sum:cement_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_growth_prct]' derivation='Sum' name='[sum:co2_growth_prct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_per_capita]' derivation='Sum' name='[sum:co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2_per_capita]' derivation='Sum' name='[sum:coal_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cumulative_co2]' derivation='Sum' name='[sum:cumulative_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2_per_capita]' derivation='Sum' name='[sum:flaring_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2_per_capita]' derivation='Sum' name='[sum:gas_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2_per_capita]' derivation='Sum' name='[sum:oil_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_co2_per_capita]' derivation='Sum' name='[sum:other_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_industry_co2]' derivation='Sum' name='[sum:other_industry_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trade_co2_share]' derivation='Sum' name='[sum:trade_co2_share:qk]' pivot='key' type='quantitative' />
+            <column caption='Trade Co2 Share' datatype='real' name='[trade_co2_share]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Co2 New.csv' datatype='integer' name='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_growth_prct:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:trade_co2_share:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:population:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Asia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Europe&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;North America&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' value='55' />
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' value='76' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#4e79a7' />
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]</rows>
+        <cols>([federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk] / [federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{4D6EDF8A-9008-48E7-8ED9-39EC7EE5031A}' />
+    </worksheet>
+    <worksheet name='Cumilative co2 and co2 per capta over year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Cumulative Co2' datatype='real' name='[cumulative_co2]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_per_capita]' derivation='Sum' name='[sum:co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cumulative_co2]' derivation='Sum' name='[sum:cumulative_co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' included-values='in-range'>
+            <min>1975</min>
+            <max>2020</max>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]' value='52' />
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]' value='52' />
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' value='35' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk] + [federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk])</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{EA01D124-5F57-4BF4-A203-42F2FAC19079}' />
+    </worksheet>
+    <worksheet name='Emission rate by Internal over Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+            <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+            <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+            <column caption='Other Industry Co2' datatype='real' name='[other_industry_co2]' role='measure' type='quantitative' />
+            <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_industry_co2]' derivation='Sum' name='[sum:other_industry_co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' value='44' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#b07aa1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c0c0c0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e799b3' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk] + ([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk] + ([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk] + ([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk] + ([federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk] + [federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk])))))</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{12B9BBCE-2499-45DE-9FC1-71A939AE295A}' />
+    </worksheet>
+    <worksheet name='Overall Contribution to india in co2 Emission'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <_.fcp.ObjectModelTableType.true...column caption='Co2 New.csv' datatype='table' name='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]' pivot='key' type='quantitative' />
+            <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+            <column caption='Cement Co2 Per Capita' datatype='real' name='[cement_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Co2 Growth Prct' datatype='real' name='[co2_growth_prct]' role='measure' type='quantitative' />
+            <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+            <column caption='Coal Co2 Per Capita' datatype='real' name='[coal_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Cumulative Co2' datatype='real' name='[cumulative_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+            <column caption='Flaring Co2 Per Capita' datatype='real' name='[flaring_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+            <column caption='Gas Co2 Per Capita' datatype='real' name='[gas_co2_per_capita]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+            <column caption='Oil Co2 Per Capita' datatype='real' name='[oil_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Other Co2 Per Capita' datatype='real' name='[other_co2_per_capita]' role='measure' type='quantitative' />
+            <column caption='Other Industry Co2' datatype='real' name='[other_industry_co2]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+            <column-instance column='[cement_co2]' derivation='Sum' name='[sum:cement_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cement_co2_per_capita]' derivation='Sum' name='[sum:cement_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_growth_prct]' derivation='Sum' name='[sum:co2_growth_prct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_per_capita]' derivation='Sum' name='[sum:co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2]' derivation='Sum' name='[sum:coal_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coal_co2_per_capita]' derivation='Sum' name='[sum:coal_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cumulative_co2]' derivation='Sum' name='[sum:cumulative_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2]' derivation='Sum' name='[sum:flaring_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flaring_co2_per_capita]' derivation='Sum' name='[sum:flaring_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2]' derivation='Sum' name='[sum:gas_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gas_co2_per_capita]' derivation='Sum' name='[sum:gas_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2]' derivation='Sum' name='[sum:oil_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[oil_co2_per_capita]' derivation='Sum' name='[sum:oil_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_co2_per_capita]' derivation='Sum' name='[sum:other_co2_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[other_industry_co2]' derivation='Sum' name='[sum:other_industry_co2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trade_co2_share]' derivation='Sum' name='[sum:trade_co2_share:qk]' pivot='key' type='quantitative' />
+            <column caption='Trade Co2 Share' datatype='real' name='[trade_co2_share]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Co2 New.csv' datatype='integer' name='[__tableau_internal_object_id__].[Co2 New.csv_5D1E44067F1B433EB4584005056BECF9]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:population:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cumulative_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_growth_prct:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[__tableau_internal_object_id__].[cnt:Co2 New.csv_5D1E44067F1B433EB4584005056BECF9:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:coal_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:oil_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:cement_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:gas_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:flaring_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_industry_co2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:other_co2_per_capita:qk]&quot;</bucket>
+              <bucket>&quot;[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:trade_co2_share:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#898989' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]</rows>
+        <cols>([federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk] / [federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{FDFD426F-89D4-4FC3-970C-78CE4AE2555D}' />
+    </worksheet>
+    <worksheet name='Top 20 Emitting Countries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Oceania&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South Korea&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ukraine&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' value='92' />
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' value='64' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#59a14f' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <lod column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{B3D8D8B4-48B6-40E2-89FE-DA8BB004EC63}' />
+    </worksheet>
+    <worksheet name='Total Co2 Emmission over the Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' value='64' />
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' value='52' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' num-steps='8' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{F4248256-6F69-4B5B-AA4A-EDCC0AD77274}' />
+    </worksheet>
+    <worksheet name='Total Emision by Continents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:country:nk]' />
+              <groupfilter function='member' level='[none:country:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='color' value='#4e79a7' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+              <size column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <wedge-size column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E852709B-5241-4D85-96C8-9005FBA1DED3}' />
+    </worksheet>
+    <worksheet name='Total World Emission'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[Longitude (generated)]' field-type='quantitative' max='25904222.726857875' min='-16224873.406780167' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[Latitude (generated)]' field-type='quantitative' max='14011690.158736533' min='-10286975.851117913' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+              <size column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+              <geometry column='[federated.11z382s10i2o1919gzi5s03z3l8a].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[Latitude (generated)]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9F594DBF-CA58-4585-BEEC-BDE78B2123BA}' />
+    </worksheet>
+    <worksheet name='co2 emmision by international Factors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;International transport&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwaiti Oil Fires&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' value='76' />
+            <format attr='height' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' value='37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b07aa1' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk] * [federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk])</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{1D384A4B-F074-4C59-BA6E-A57CC1171B4D}' />
+    </worksheet>
+    <worksheet name='co2 emmision over past 10 years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Co2 New' name='federated.11z382s10i2o1919gzi5s03z3l8a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z382s10i2o1919gzi5s03z3l8a'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Africa&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Asia (excl. China &amp; India)&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;EU-27&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;EU-28&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Europe&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Europe (excl. EU-27)&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Europe (excl. EU-28)&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;International transport&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;North America&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;North America (excl. USA)&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;South America&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Ukraine&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2020</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:year:qk]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</column>
+            <column>[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' value='132' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#59a14f' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' />
+              <text column='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]</rows>
+        <cols>[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]</cols>
+      </table>
+      <simple-id uuid='{7F9A7D70-3BB6-41B6-A589-6A0FBA455B68}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='87200' x='800' y='1000'>
+              <zone h='49000' id='3' name='Total World Emission' w='43600' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' name='Total Co2 Emmission over the Time' w='43600' x='44400' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Top 20 Emitting Countries' w='43600' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='13' name='Total Emision by Continents' w='43600' x='44400' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='112' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11200' x='88000' y='1000'>
+              <zone fixed-size='204' h='26500' id='8' is-fixed='true' name='Total World Emission' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='11200' x='88000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='107' h='14375' id='9' is-fixed='true' name='Total World Emission' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type-v2='size' w='11200' x='88000' y='27500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='11' name='Total Co2 Emmission over the Time' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type-v2='color' w='11200' x='88000' y='41875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='54' type-v2='dashboard-object' w='11200' x='88000' y='51000'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{21D758F8-B932-4EB8-BCD1-DA2D5CAA19C1}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Next</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                    <format attr='background-color' value='#d37295' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='162' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='161' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Total World Emission' w='43600' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='204' h='26500' id='8' name='Total World Emission' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='11200' x='88000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='107' h='14375' id='9' name='Total World Emission' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type-v2='size' w='11200' x='88000' y='27500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='10' is-fixed='true' name='Total Co2 Emmission over the Time' w='43600' x='44400' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='11' name='Total Co2 Emmission over the Time' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type-v2='color' w='11200' x='88000' y='41875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Top 20 Emitting Countries' w='43600' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='13' is-fixed='true' name='Total Emision by Continents' w='43600' x='44400' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='54' type-v2='dashboard-object' w='11200' x='88000' y='51000'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{21D758F8-B932-4EB8-BCD1-DA2D5CAA19C1}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Next</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#d37295' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A00C9C46-6062-4330-9138-6ED1B53B9914}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='27' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='25' type-v2='layout-basic' w='89000' x='800' y='1000'>
+              <zone h='36250' id='23' name='Co2 emission per capita' w='44500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36250' id='31' name='co2 emmision by international Factors' w='44500' x='45300' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='61750' id='32' name='Emission rate by Internal over Year' w='47300' x='800' y='37250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='61750' id='33' name='co2 emmision over past 10 years' w='41700' x='48100' y='37250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='94' h='98000' id='26' is-fixed='true' param='vert' type-v2='layout-flow' w='9400' x='89800' y='1000'>
+              <zone h='30000' id='28' name='Co2 emission per capita' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='9400' x='89800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='42' type-v2='dashboard-object' w='9400' x='89800' y='31000'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{2746D495-1B73-4450-A80E-AB8AE4F60B60}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Next</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                    <format attr='background-color' value='#d37295' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='43' type-v2='dashboard-object' w='9400' x='89800' y='37500'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{FB5180DB-7233-45FE-A11B-E4341C7BFA40}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Previous</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                    <format attr='background-color' value='#d4d4d4' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='151' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='150' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='36250' id='23' is-fixed='true' name='Co2 emission per capita' w='44500' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30000' id='28' name='Co2 emission per capita' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='9400' x='89800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36250' id='31' is-fixed='true' name='co2 emmision by international Factors' w='44500' x='45300' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='42' type-v2='dashboard-object' w='9400' x='89800' y='31000'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{2746D495-1B73-4450-A80E-AB8AE4F60B60}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Next</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#d37295' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='61750' id='32' is-fixed='true' name='Emission rate by Internal over Year' w='47300' x='800' y='37250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='61750' id='33' is-fixed='true' name='co2 emmision over past 10 years' w='41700' x='48100' y='37250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='43' type-v2='dashboard-object' w='9400' x='89800' y='37500'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{FB5180DB-7233-45FE-A11B-E4341C7BFA40}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Previous</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#d4d4d4' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FA3E89C5-EA98-44EE-8BD1-B713A6EA96FC}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='89000' x='800' y='1000'>
+              <zone h='49000' id='3' name='Continent wise contribution in internal Factors' w='44500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Cumilative co2 and co2 per capta over year' w='44500' x='45300' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' name='Co2 Emmission from 1974 to 2020' w='44500' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Co2 Emission in 2020' w='44500' x='45300' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='94' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9400' x='89800' y='1000'>
+              <zone h='19500' id='8' name='Continent wise contribution in internal Factors' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type-v2='color' w='9400' x='89800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='11' name='Co2 Emmission from 1974 to 2020' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' type-v2='color' w='9400' x='89800' y='20500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='35250' id='13' name='Co2 Emission in 2020' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='9400' x='89800' y='29625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='16' type-v2='dashboard-object' w='9400' x='89800' y='64875'>
+                <button action='tabdoc:goto-sheet window-id=&quot;{21D758F8-B932-4EB8-BCD1-DA2D5CAA19C1}&quot;' button-type='text'>
+                  <button-visual-state>
+                    <caption>Previous</caption>
+                    <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                    <format attr='background-color' value='#d4d4d4' />
+                  </button-visual-state>
+                </button>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='124' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='123' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Continent wise contribution in internal Factors' w='44500' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19500' id='8' name='Continent wise contribution in internal Factors' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type-v2='color' w='9400' x='89800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Cumilative co2 and co2 per capta over year' w='44500' x='45300' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='10' is-fixed='true' name='Co2 Emmission from 1974 to 2020' w='44500' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='11' name='Co2 Emmission from 1974 to 2020' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' type-v2='color' w='9400' x='89800' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Co2 Emission in 2020' w='44500' x='45300' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='35250' id='13' name='Co2 Emission in 2020' pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type-v2='color' w='9400' x='89800' y='29625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='16' type-v2='dashboard-object' w='9400' x='89800' y='64875'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{21D758F8-B932-4EB8-BCD1-DA2D5CAA19C1}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Previous</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#d4d4d4' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9C013E69-BDB3-4F56-8471-98D08B1ACF8F}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Co2 Emission Story</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='203' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Top 20 emitting countries: This shows the Sum of Co2 for each Country Color shows details about Country. The marks are labeled by sum of Co2 Details are shown for Country The view is filtered on Country, which keeps 19 of 244members.Countries Emitting Highest co2 emission range over countries.' captured-sheet='Top 20 Emitting Countries' id='2' />
+                  <story-point caption='Total co2 emission over the Time: this shows the trends of sum of co2 over year,the color showing the sum of co2' captured-sheet='Total Co2 Emmission over the Time' id='3' />
+                  <story-point caption='Co2 emission over past 10 years:Sum of co2 for each country  .The color shows detail about country .The marks are labeled by sum of co2.The data is filtered on year over 2010 to 2020.The view is filtered on country.' captured-sheet='co2 emmision over past 10 years' id='4' />
+                  <story-point caption='Total Emission by continents :The pie chart shows the sum of co2 and country.The color shows detail over countries.The marks are labeled by co2 and country.The view are filtered by the country where for 244 members.' captured-sheet='Total Emision by Continents' id='5' />
+                  <story-point caption='Co2 emission per capita:This chart shows the sum of co2 per capita over countries.The color shows detail about countries.The marks are labeled for sum of co2 per capita.The view is filtered on country.' captured-sheet='Co2 emission per capita' id='6' />
+                  <story-point caption='The co2 emission from 1990 to 2020:this is a bar chart shows the The plots of Cement Co2. Coal Co2, Flaring Co2, GalCo2 Oil Co2 and Other Industry Co2 for Year Color shows Cement Co2, Coal Co2, Flaring Co2, Gas Co2, On Co2 and Other Industry Co2 The marks are labeled by Cement Co2, Coal Co2, Flaring Co2, Gas Co2, Oil Co2 and Other Industry Co2 Details are shown for Cement Co2 Coal Coz Freong joc Gas Co2 Oil Co2 and Other Industry Co2. The view is filtered on Year, which ranges from 1975 to 2020.' captured-sheet='Co2 Emmission from 1974 to 2020' id='7' />
+                  <story-point caption='Co2 emission by international Factors:This shows the The trend of sum of Co2 for Year broken down by Country Color shows details about Country The view is filtered on Country, which keeps International transport and Kuwaiti Oil Fires.' captured-sheet='co2 emmision by international Factors' id='8' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{E8E29338-B166-419E-94B1-82D0CA6A9E44}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='Total World Emission'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='136'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2C4FD31D-20BC-443B-A8A8-8E608A2A9A3E}' />
+    </window>
+    <window class='worksheet' name='Total Co2 Emmission over the Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B912943-E0F8-4CCC-98B1-6852FAD58668}' />
+    </window>
+    <window class='worksheet' name='Co2 Emission India vs United States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A15AABBB-0340-4C45-954E-CB669AC34934}' />
+    </window>
+    <window class='worksheet' name='Total Emision by Continents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[sum:co2:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F5848EBD-C5CD-4D86-A1D6-1106B4841C3D}' />
+    </window>
+    <window class='worksheet' name='Co2 emission per capita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D3932C62-61E3-4C6D-ACC9-C4DCA3438EF6}' />
+    </window>
+    <window class='worksheet' name='Emission rate by Internal over Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A7AC690E-604E-401C-B520-E59BB6765DFE}' />
+    </window>
+    <window class='worksheet' name='Continent wise contribution in internal Factors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4583CD22-9CD2-4198-83C9-E63845B74107}' />
+    </window>
+    <window class='worksheet' name='Cumilative co2 and co2 per capta over year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{471FDC61-A6E0-4CC2-8A0B-7C690851E69C}' />
+    </window>
+    <window class='worksheet' name='China vs India Internal Factors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AF945F6A-DDA7-4F61-B60D-871C3A789396}' />
+    </window>
+    <window class='worksheet' name='Co2 Emmission from 1974 to 2020'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[Multiple Values]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8A44E877-9E64-462E-ABFD-93898E7AAC3F}' />
+    </window>
+    <window class='worksheet' name='Overall Contribution to india in co2 Emission'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0153E461-C69A-40E7-AF46-BE7A72377536}' />
+    </window>
+    <window class='worksheet' name='Co2 Emission in 2020'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{974C30E1-BBD2-481C-AA47-8F12153C4993}' />
+    </window>
+    <window class='worksheet' name='Top 20 Emitting Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FBD313C4-05C0-4D39-8A76-F1BB4B603A4E}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Top 20 Emitting Countries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Co2 Emmission over the Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Emision by Continents'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total World Emission'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FB5180DB-7233-45FE-A11B-E4341C7BFA40}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Co2 emission per capita'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Emission rate by Internal over Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='co2 emmision by international Factors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='co2 emmision over past 10 years' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{21D758F8-B932-4EB8-BCD1-DA2D5CAA19C1}' />
+    </window>
+    <window class='worksheet' name='co2 emmision by international Factors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{216A3475-F63A-4C22-9AD8-884518B576CE}' />
+    </window>
+    <window class='worksheet' name='co2 emmision over past 10 years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11z382s10i2o1919gzi5s03z3l8a].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2A85950C-C6DA-4FA2-A42D-8A96A661FA60}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Co2 Emission in 2020'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Co2 Emmission from 1974 to 2020'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Continent wise contribution in internal Factors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cumilative co2 and co2 per capta over year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2746D495-1B73-4450-A80E-AB8AE4F60B60}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B521797C-23DF-41F7-982C-891235CE7D60}' />
+    </window>
+  </windows>
+</workbook>
