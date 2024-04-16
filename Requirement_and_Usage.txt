@@ -1,0 +1,7 @@
+Tableau is required to open the twb files.
+Install the Tableau as student if you are a student ,you will get 1 year free acess of tableau.
+After Installation You need to open the story.twb file then it will show error in your system as you have not set the dataset.
+Go to datasource in that and add co2news.csv file there.
+Now you can access each and every worksheet,Dashboards of Co2 emmision project .
+If you want to create your own visualizations the data set is provided in the project folder.
+The visualizations pictures are provided in the another folder for getting the idea of visualization.
